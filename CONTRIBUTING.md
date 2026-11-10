@@ -22,7 +22,11 @@ git push -u origin feature/page-contact
 ```
 
 5. Sur GitHub, cliquer sur **Compare & pull request**, remplir le modèle, demander une relecture.
-6. Une fois la PR **approuvée** et **à jour avec main**, cliquer sur **Merge pull request**.
+   GitHub lance automatiquement la **vérification** du HTML et du CSS (balises non fermées,
+   `alt` manquant sur une image, propriété CSS mal écrite…). Elle doit être verte ✅.
+   Si elle est rouge ❌, cliquer sur **Details** pour voir la ligne en cause, corriger, re-pousser.
+   (Avec Node.js installé, on peut la lancer en local : `npm install` puis `npm run verifier`.)
+6. Une fois la PR **approuvée**, **verte** et **à jour avec main**, cliquer sur **Merge pull request**.
    La branche est supprimée automatiquement. Revenir sur `main` et faire `git pull`.
 
 ## Noms de branches

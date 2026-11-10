@@ -1,0 +1,22 @@
+name: Vérification
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verification:
+    name: verification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Vérifier le HTML
+        run: npm run verifier:html
+      - name: Vérifier le CSS
+        run: npm run verifier:css
