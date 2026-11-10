@@ -25,7 +25,7 @@ git push -u origin feature/page-contact
    GitHub lance automatiquement la **vérification** du HTML et du CSS (balises non fermées,
    `alt` manquant sur une image, propriété CSS mal écrite…). Elle doit être verte ✅.
    Si elle est rouge ❌, cliquer sur **Details** pour voir la ligne en cause, corriger, re-pousser.
-   (Avec Node.js installé, on peut la lancer en local : `npm install` puis `npm run verifier`.)
+   (Avec Node.js installé, on peut la lancer en local : `cd .github/verification`, `npm install`, puis `npm run verifier`.)
 6. Une fois la PR **approuvée**, **verte** et **à jour avec main**, cliquer sur **Merge pull request**.
    La branche est supprimée automatiquement. Revenir sur `main` et faire `git pull`.
 
