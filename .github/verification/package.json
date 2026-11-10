@@ -4,8 +4,8 @@
   "description": "Outils de vérification du HTML et du CSS (utilisés par GitHub à chaque Pull Request).",
   "scripts": {
     "verifier": "npm run verifier:html && npm run verifier:css",
-    "verifier:html": "htmlhint \"code/**/*.html\"",
-    "verifier:css": "stylelint \"code/**/*.css\" --allow-empty-input"
+    "verifier:html": "htmlhint \"../../code/**/*.html\" --config .htmlhintrc",
+    "verifier:css": "stylelint \"../../code/**/*.css\" --config .stylelintrc.json --allow-empty-input"
   },
   "devDependencies": {
     "htmlhint": "1.1.4",
