@@ -1,0 +1,15 @@
+{
+  "name": "mini-projet-web-html-css",
+  "private": true,
+  "description": "Outils de vérification du HTML et du CSS (utilisés par GitHub à chaque Pull Request).",
+  "scripts": {
+    "verifier": "npm run verifier:html && npm run verifier:css",
+    "verifier:html": "htmlhint \"code/**/*.html\"",
+    "verifier:css": "stylelint \"code/**/*.css\" --allow-empty-input"
+  },
+  "devDependencies": {
+    "htmlhint": "1.1.4",
+    "stylelint": "16.10.0",
+    "stylelint-config-recommended": "14.0.1"
+  }
+}
