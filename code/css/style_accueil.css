@@ -1,1 +1,44 @@
+html {
+  background-color: darkred;
+}
+body{
+  background-color: #0055ff;
+}
+article{
+  background-color: #8b7400;
+}
+p{
+  background-color: #5eff00;
+}
+li{
+  background-color: #dd00ff;
+}
+.image-texte, .vie-etudiante {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.vie-etudiante a {
+  margin-left: auto;
+}
+
+.bloc-competence {
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.image-texte img{
+  width: 200px;
+  height: auto;
+}
+.bloc-competence img {
+  width: 200px;
+  height: auto;
+}
+.competences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
