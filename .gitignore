@@ -1,0 +1,4 @@
+# ⚠️ Ce fichier doit rester à la racine du projet : ailleurs, il ne fonctionne plus.
+node_modules/
+.DS_Store
+.idea/
