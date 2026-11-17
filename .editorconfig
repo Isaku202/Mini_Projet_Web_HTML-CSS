@@ -1,3 +1,4 @@
+# ⚠️ Ce fichier doit rester à la racine du projet : ailleurs, il ne fonctionne plus.
 # Même indentation pour tout le monde (évite les faux conflits d'espaces)
 root = true
 
