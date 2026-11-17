@@ -2,6 +2,6 @@
 
 Placez ici les fichiers du site web, par exemple :
 
-- `index.html`
-- `css/style.css`
+- `index_accueil.html`
+- `css/style_accueil.css`
 - `images/`
